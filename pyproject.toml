@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tgg-subtitle-skill"
+version = "0.1.0"
+description = "Safe video subtitle proofreading with cross-checking"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "puffer1021" }]
+keywords = ["subtitle", "srt", "proofreading", "captions", "agent-skill"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Text Processing",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["jianying_subtitle_proofread*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[project.scripts]
+tgg-subtitle-skill = "jianying_subtitle_proofread.cli:main"
+subtitle-proofread = "jianying_subtitle_proofread.cli:main"
