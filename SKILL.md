@@ -1,8 +1,9 @@
 ---
-name: tgg-subtitle-skill
+name: puffer1021-subtitle-proofreader
 description: Use when proofreading Jianying, Whisper, or other video .srt subtitles while preserving timestamps, subtitle order, and per-block line counts.
 version: 0.1.0
 author: puffer1021
+category: creative
 tags:
   - subtitles
   - srt
@@ -18,7 +19,7 @@ permissions:
   - shell
 ---
 
-# tgg-subtitle-skill
+# puffer1021-subtitle-proofreader
 
 Use this skill when the user provides a Jianying, Whisper, or other video `.srt` subtitle file and wants safe proofreading without changing timestamps or subtitle structure.
 
